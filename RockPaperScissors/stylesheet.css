@@ -1,0 +1,226 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Fredoka One', cursive;
+}
+
+hr {
+    border: 1px solid black;
+}
+
+p {
+    font-size: 48px;
+}
+
+.wrapper {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(
+        134.34% 134.34% at 50% 0%,
+        #605770 0%,
+        #4D4861 100%
+    );
+}
+
+.scoreboard {
+    float: left;
+    width: 25vw;
+    height: 80vh;
+    margin-top: 10vh;
+    margin-left: 5vw;
+    padding: 15px;
+
+    background-color: #FFE5D4;
+    border: 5px solid black;
+    border-radius: 12px;
+
+    text-align: center;
+    font-size: 24px;
+}
+
+.scoreboard .reset {
+    float: right;
+    background-color: white;
+    margin-top: 7vh;
+
+    border-radius: 10px;
+    box-shadow: 0px 4px #999;
+    width: 200px;
+
+    font-size: 32px;
+    font-family: 'Fredoka One', cursive;
+}
+
+.reset:hover {
+    background-color: #EF2D56;
+    color: white;
+}
+
+.reset:active {
+    box-shadow: 1px 1px #999;
+    transform: translateY(5px);
+}
+
+.rock, .paper, .scissors {
+    background-color: #FFFFFF;
+    float: left;
+    margin-top: 15vh;
+
+    border-radius: 50%;
+    border: none;
+    box-shadow: 5px 5px 5px #999;
+    width: 300px;
+    height: 300px;
+
+    font-size: 0px;
+}
+
+.rock {
+    background-image: url("images/rock.jpeg");
+    background-repeat: no-repeat;
+    background-size: 250px 250px;
+    background-position: center;
+    margin-left: 6vw;
+}
+
+.paper {
+    background-image: url("images/paper.jpeg");
+    background-repeat: no-repeat;
+    background-size: 240px 250px;
+    background-position: center;
+    margin-left: 7.3vw;
+}
+
+.scissors {
+    background-image: url("images/scissors.jpeg");
+    background-repeat: no-repeat;
+    background-size: 270px 270px;
+    background-position: center;
+    margin-left: 7.3vw;
+}
+
+.rock:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px #FB6376;
+    transition: .3s;
+}
+
+.paper:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px #99bdff;
+    transition: .3s;
+}
+
+.scissors:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 5px #3DDC97;
+    transition: .3s;
+}
+
+.rock:active {
+    box-shadow: 2px 2px 2px #FB6376;
+    transform: translateY(10px);
+}
+
+.paper:active {
+    box-shadow: 2px 2px 2px #99bdff;
+    transform: translateY(10px);
+}
+
+.scissors:active {
+    box-shadow: 2px 2px 2px #3DDC97;
+    transform: translateY(10px);
+}
+
+.option1 {
+    float: left;
+    margin-top: 2vh;
+    margin-left: 10vw;
+
+    font-size: 48px;
+    text-shadow: 1px 1px 1px black;
+    color: #FB6376;
+}
+
+.option2 {
+    float: left;
+    margin-top: 2vh;
+    margin-left: 14.5vw;
+
+    font-size: 48px;
+    text-shadow: 1px 1px 1px black;
+    color: #99bdff;
+}
+
+.option3 {
+    float: left;
+    margin-top: 2vh;
+    margin-left: 12.5vw;
+
+    font-size: 48px;
+    text-shadow: 1px 1px 1px black;
+    color: #3DDC97;
+}
+
+.result {
+    display: none;
+    background-color: #FFE5D4;
+    border: 5px solid black;
+    border-radius: 12px;
+
+    width: 50vw;
+    height: 10vh;
+    float: left;
+    margin-top: 15vh;
+    margin-left: 10vw;
+    padding-top: 2vh;
+
+    font-size: 48px;
+    text-align: center;
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 768px) {
+    .scoreboard {
+        height: 50vh;
+        font-size: 12px;
+    }
+
+    .scoreboard .reset {
+        box-shadow: 0px 2px #999;
+        width: 175px;
+
+        font-size: 32px;
+        font-family: 'Fredoka One', cursive;
+    }
+
+    .rock, .paper, .scissors {
+        box-shadow: 2px 2px 5px #999;
+        width: 120px;
+        height: 120px;
+        background-size: 100px 100px;
+    }
+
+    .option1 {
+        font-size: 20px;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .option2 {
+        font-size: 20px;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .option3 {
+        font-size: 20px;
+        text-shadow: 1px 1px 1px black;
+    }
+
+    .result {
+        display: none;
+        font-size: 36px;
+    }
+}
