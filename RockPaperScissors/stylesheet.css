@@ -41,9 +41,9 @@ p {
 }
 
 .scoreboard .reset {
-    float: right;
     background-color: white;
     margin-top: 7vh;
+    margin-left: 14vw;
 
     border-radius: 10px;
     box-shadow: 0px 4px #999;
@@ -185,41 +185,62 @@ p {
 @media only screen
 and (max-width : 768px) {
     .scoreboard {
-        font-size: 8px;
+        font-size: 6px;
+        height: 40vh;
     }
 
     .scoreboard .reset {
         box-shadow: 0px 2px #999;
-        width: 85px;
+        width: 100px;
+        margin-left: 0vw;
+        transform: translateX(-18px);
 
-        font-size: 16px;
-        font-family: 'Fredoka One', cursive;
+        font-size: 20px;
     }
 
     .rock, .paper, .scissors {
-        box-shadow: 2px 2px 5px #999;
-        width: 80px;
-        height: 80px;
-        background-size: 60px 60px;
+        float: none;
+        box-shadow: 1px 1px 3px #999;
+        width: 100px;
+        height: 100px;
+        background-size: 80px 80px;
+    }
+
+    .scissors {
+        margin-left: 21.5vw;
+        margin-top: 3vh;
     }
 
     .option1 {
+        position: absolute;
+        margin-left: 44vw;
+        transform: translateY(-130px);
         font-size: 14px;
         text-shadow: 1px 1px 1px black;
     }
 
     .option2 {
+        position: absolute;
+        margin-left: 76vw;
+        transform: translateY(-130px);
         font-size: 14px;
         text-shadow: 1px 1px 1px black;
     }
 
     .option3 {
+        position: absolute;
+        margin-left: 57vw;
+        margin-bottom: 70vh;
         font-size: 14px;
         text-shadow: 1px 1px 1px black;
     }
 
     .result {
         display: none;
+        margin-left: 5vw;
+        margin-top: 10vh;
+        width: 90vw;
         font-size: 22px;
     }
 }
+
