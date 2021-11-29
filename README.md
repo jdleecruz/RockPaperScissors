@@ -9,7 +9,17 @@ A website for playing RPS vs the computer.
 3. The result will be displayed below the options
 4. The score will be updated based on who won.
 
-##Languages Used
+## Features
+### Reset Button
+Will reset all scores back to 0 and clear any resulting text.
+
+### Mobile Responsive
+It can be displayed on mobile devices
+- iPhone X
+- iPhone 6/7/8 Plus
+- For some devices it may not be perfectly optimized.
+
+## Languages Used
 - HTML
 - CSS
 - JavaScript
